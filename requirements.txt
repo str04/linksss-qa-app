@@ -1,0 +1,43 @@
+# Streamlit for UI
+streamlit>=1.25.0
+
+# .env loader
+python-dotenv>=1.0.0
+
+# LangChain core
+langchain>=0.3.20
+langchain-community>=0.3.20
+langchain-google-genai>=2.1.2  # Must support `google_api_key`
+
+# Embeddings
+faiss-cpu
+huggingface-hub
+sentence-transformers
+
+# Gemini dependencies
+google-auth>=2.38.0
+google-ai-generativelanguage>=0.6.17
+protobuf>=5.0.0
+
+# Web scraping (for UnstructuredURLLoader)
+requests
+beautifulsoup4
+html2text
+
+# Vector math
+numpy
+
+# === Needed for LangChain & HuggingFace Embeddings ===
+transformers
+torch
+numpy
+
+# === Needed for Google Generative AI & Auth ===
+google-auth
+google-ai-generativelanguage
+protobuf
+
+# === Document Loading from URLs ===
+requests
+beautifulsoup4
+html2text
